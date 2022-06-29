@@ -1,6 +1,6 @@
 # Inventory Management System
 
-Live Site [Inventory](https://bikes-alaeze.web.app/).
+Live Site [Inventory](https://sensational-macaron-1291a9.netlify.app/).
 
 ## Project Description
 
