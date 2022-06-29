@@ -2,20 +2,14 @@ import { initializeApp } from "firebase/app";
 import { getAuth } from "firebase/auth";
 
 const firebaseConfig = {
-  //     apiKey: process.env.REACT_APP_APIKEY ,
-  //     authDomain: process.env.REACT_APP_AUTHDOMAIN ,
-  //     projectId: process.env.REACT_APP_PROJECTID ,
-  //     storageBucket: process.env.REACT_APP_STORAGEBUCKET ,
-  //     messagingSenderId: process.env.REACT_APP_MESSAGINGSENDERID ,
-  //     appId: process.env.REACT_APP_APPID ,
-  //   };
-  apiKey: "AIzaSyBKLZcXfi7SWNvK-xuPVYw7W3Ptxyksifw",
-  authDomain: "bikes-alaeze.firebaseapp.com",
-  projectId: "bikes-alaeze",
-  storageBucket: "bikes-alaeze.appspot.com",
-  messagingSenderId: "580771726043",
-  appId: "1:580771726043:web:44a64a12e6f8b75d2642fe",
-};
+
+  apiKey: "AIzaSyD8ItIBqb6MICS_wNsnPzqFvg1BZVu1E50",
+  authDomain: "inventorymanagementsyste-3a4f4.firebaseapp.com",
+  projectId: "inventorymanagementsyste-3a4f4",
+  storageBucket: "inventorymanagementsyste-3a4f4.appspot.com",
+  messagingSenderId: "144379056339",
+  appId: "1:144379056339:web:14ea4069d2f31956534426"
+}
 
 // Initialize Firebase
 const app = initializeApp(firebaseConfig);

@@ -17,6 +17,7 @@ import { ToastContainer } from "react-toastify";
 import "react-toastify/dist/ReactToastify.css";
 
 import Dashboard from "./Pages/Dashboard/Dashboard";
+
 function App() {
   return (
     <div className="">
@@ -49,6 +50,7 @@ function App() {
             path="allcatagory/updateproducts/:id"
             element={<Updateproducts></Updateproducts>}
           ></Route>
+          
           <Route
             path="myprofile"
             element={<MyProfile></MyProfile>}

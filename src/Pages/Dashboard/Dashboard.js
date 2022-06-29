@@ -2,6 +2,7 @@ import React, { useState } from "react";
 import { useForm } from "react-hook-form";
 import { Link,Outlet, useNavigate } from "react-router-dom";
 
+
 const Dashboard = () => {
   const {
     register,
@@ -16,10 +17,8 @@ const Dashboard = () => {
   const navigate = useNavigate();
 
   const onSubmit = (data) => {
-
     navigate(`allcatagory`,{state:{data:data.catagory}});
   
-   
   };
   return (
     <div className="drawer drawer-mobile">
@@ -51,6 +50,9 @@ const Dashboard = () => {
           <li>
 
             <Link to="addproduct">Add Product</Link>
+          </li>
+          <li>
+            <Link to="managecatagory">Manage Catagory</Link>
           </li>
           <li>
             <Link to="myprofile">My Profile</Link>

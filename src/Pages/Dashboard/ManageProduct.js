@@ -23,7 +23,7 @@ const catagory=location.state.data
   return (
     <div className="overflow-x-auto">
       <h1 className="text-accent text-3xl text-center font-bold mb-3">
-        Manage Products
+        Inventory
       </h1>
       <table className="table w-full">
         <thead>
