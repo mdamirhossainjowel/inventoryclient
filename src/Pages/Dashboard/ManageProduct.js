@@ -7,13 +7,13 @@ const ManageProduct = () => {
 const catagory=location.state.data 
   useEffect(() => {
     if(catagory==='default' || catagory==='showall'){
-      fetch(`http://localhost:5000/products`)
+      fetch(`http://localhost:5000/catagory`)
       .then((res) => res.json())
       .then((result) => setProducts(result));
     }
     else{
       console.log(catagory)
-      fetch(`http://localhost:5000/products/${catagory}`)
+      fetch(`http://localhost:5000/catagory/${catagory}`)
       .then((res) => res.json())
       .then((result) => setProducts(result));
     }

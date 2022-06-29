@@ -3,7 +3,6 @@ import { Link } from "react-router-dom";
 import { useAuthState } from "react-firebase-hooks/auth";
 import auth from "../../firebase.init";
 import { signOut } from "firebase/auth";
-import bikeslogo from "../../Assets/bikelogo.png";
 
 const Header = () => {
   const [user] = useAuthState(auth);
@@ -52,7 +51,7 @@ const Header = () => {
           </ul>
         </div>
         <Link to="/" className="btn btn-ghost normal-case text-xl">
-          Bikes Alaeze <img className="ml-2 w-10" src={bikeslogo} alt="" />
+        Inventory
         </Link>
       </div>
       <div className="navbar-center hidden lg:flex">

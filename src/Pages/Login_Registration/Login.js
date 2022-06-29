@@ -6,7 +6,6 @@ import {
 import { useForm } from "react-hook-form";
 import { Link, useNavigate } from "react-router-dom";
 import Loading from "../Shared/Loading";
-import useToken from "../../hook/useToken";
 import auth from "../../firebase.init";
 import login from "../../Assets/login.png";
 
@@ -25,12 +24,12 @@ const Login = () => {
   ] = useSignInWithEmailAndPassword(auth);
   const [signInWithGoogle, usergoogle, loadinggoogle, errorgoogle] =
     useSignInWithGoogle(auth);
-  const [token] = useToken(userEmailPass || usergoogle);
+  
   const navigate = useNavigate();
   if (loadingEmailPass || loadinggoogle) {
     return <Loading></Loading>;
   }
-  if (token) {
+  if (userEmailPass||usergoogle) {
     navigate("/");
   }
   const onSubmit = (data) => {

@@ -8,7 +8,7 @@ import {
 } from "react-firebase-hooks/auth";
 import auth from "../../firebase.init";
 import Loading from "../Shared/Loading";
-import useToken from "../../hook/useToken";
+
 import registration from "../../Assets/register.webp";
 
 const Registration = () => {
@@ -28,12 +28,11 @@ const Registration = () => {
   const [signInWithGoogle, usergoogle, loadinggoogle, errorgoogle] =
     useSignInWithGoogle(auth);
 
-  const [token] = useToken(userEmailPass || usergoogle);
 
   if (loadingEmailPass || loadinggoogle) {
     return <Loading></Loading>;
   }
-  if (token) {
+  if (userEmailPass || usergoogle) {
     navigate("/");
   }
   const onSubmit = async (data) => {
