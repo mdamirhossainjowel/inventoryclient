@@ -1,20 +1,18 @@
-# Bikes Alaez
+# Inventory Management System
 
-Live Site [Bikes Alaeze](https://bikes-alaeze.web.app/).
+Live Site [Inventory](https://bikes-alaeze.web.app/).
 
 ## Project Description
 
-- It is an Menufecture Product Site.
+- It is an Inventory Management System.
 - Items Are stocked.
 - Items Can be Updated.
 - Item Can be Delete.
 - Item Can Be Deliverd.
-- User Have to pay.
-- Office Location.
+- User Can view catagory wise product.
+- User Can add delete catagory.
 - User Can see his/her profile and also cal update
-- a Portfolio Site has been there.
-- a Portfolio Site has been there.
-- And Blog Part is also here
+
 
 ## Technology Used
 
@@ -24,8 +22,5 @@ Live Site [Bikes Alaeze](https://bikes-alaeze.web.app/).
 - React Firebase Hook
 - React Tailwind
 - Daisy UI
-- React Strip
-- React Query
-- React Query
 - Language - JavaScript,HTML,CSS
 - expres,node,mongoDb
